@@ -11,7 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
+		<div class="block-heading">
+			<h4 class="block-heading__title">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</h4>
+		</div>		
+
 	</header><!-- .entry-header -->
 
 	<?php gikspirit_post_thumbnail(); ?>

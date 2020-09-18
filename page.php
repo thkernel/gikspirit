@@ -15,24 +15,43 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div class="site-content bott">
+		<div class="mnmd-layout-split mnmd-block mnmd-block--fullwidth">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+					
+						<center>
+							<!-- Google ads -->
+						</center>
+						<br>
+						<div class="mnmd-block">
+							
+							<?php
+							while ( have_posts() ) :
+								the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+								get_template_part( 'template-parts/content', 'page' );
 
-			get_template_part( 'template-parts/content', 'page' );
+								
+							endwhile; // End of the loop.
+							?>
+						</div>
+								
+							
+						
+					
+				</div>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+				<div class="col-md-4">
+					<?php get_sidebar(); ?>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
 
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();
