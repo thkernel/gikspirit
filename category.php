@@ -49,11 +49,8 @@ get_header();
 									endif;
 									?>
 
-									<div class="bottom-navi" style="clear: both;">
-											
-											
-										</div>
-									</div>
+									
+								</div>
 								
 							
 						</div>
