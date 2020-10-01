@@ -6,7 +6,7 @@
 			<article class="post post--vertical"> 
 				<div class="img-short">
 					<div class="post__thumb">
-						<?php gikspirit_post_thumbnail('featured-small'); ?>
+						<?php the_post_thumbnail('featured-small'); ?>
 
 						<div id="categ" class="category overlay-item--top-left">
 							<?php 
